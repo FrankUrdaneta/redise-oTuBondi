@@ -1,0 +1,72 @@
+body {
+  font-family: "Maven Pro", sans-serif;
+}
+.navbar {
+  background-color: #009ee2;
+  color: #fafafa;
+  border-radius: 0px 0px 1rem 1rem;
+  justify-content: flex-start;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: #fafafa !important;
+}
+.navbar-brand,
+.navbar-toggler {
+  color: #fafafa;
+}
+
+.navbar-toggler {
+  border-color: #fafafa;
+}
+
+/* .navbar-toggler-icon {
+  background-color: #fafafa;
+} */
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.navbar-nav .nav-link {
+  color: #fafafa;
+}
+
+.avatar {
+  width: 3rem;
+}
+
+/* .icon_container {
+  position: absolute;
+  z-index: 100;
+  right: 1rem;
+  font-size: 2rem;
+  bottom: 12rem;
+} */
+.footer_tubondi {
+  background-color: #009ee2;
+  border-radius: 1rem 1rem 0rem 0rem;
+  height: 100px;
+}
+
+.icon_footer {
+  font-size: 2rem;
+  color: #fafafa;
+  /* margin: 1rem; */
+  margin-bottom: 0rem;
+  transition: all 0.3s;
+}
+
+.icon_footer.active {
+  z-index: 1;
+  border-radius: 3rem 3rem 0px 0px;
+  background-color: #009ee2;
+  position: relative;
+  top: -1rem;
+}
+.contenedor_footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.ol-zoom {
+  right: 0.5rem !important;
+}
