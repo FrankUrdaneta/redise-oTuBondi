@@ -49,9 +49,9 @@ body {
 }
 
 .icon_footer {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #fafafa;
-  /* margin: 1rem; */
+  margin: 1rem;
   margin-bottom: 0rem;
   transition: all 0.3s;
 }
