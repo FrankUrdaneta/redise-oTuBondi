@@ -68,5 +68,6 @@ body {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 .ol-zoom {
+  left: auto !important;
   right: 0.5rem !important;
 }
