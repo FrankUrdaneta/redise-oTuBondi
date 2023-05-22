@@ -61,7 +61,7 @@ body {
   border-radius: 3rem 3rem 0px 0px;
   background-color: #009ee2;
   position: relative;
-  top: -1rem;
+  top: -1.5rem;
 }
 .contenedor_footer {
   display: grid;
@@ -70,4 +70,13 @@ body {
 .ol-zoom {
   left: auto !important;
   right: 0.5rem !important;
+}
+.contenedor_lineas {
+  background-color: transparent;
+  z-index: 100;
+  position: absolute;
+  top: 4.5rem;
+  left: 0.5rem;
+  height: 700px;
+  overflow: auto;
 }
