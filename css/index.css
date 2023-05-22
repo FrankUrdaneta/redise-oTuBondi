@@ -6,6 +6,7 @@ body {
   color: #fafafa;
   border-radius: 0px 0px 1rem 1rem;
   justify-content: flex-start;
+  z-index: 101;
 }
 .navbar-dark .navbar-nav .nav-link {
   color: #fafafa !important;
