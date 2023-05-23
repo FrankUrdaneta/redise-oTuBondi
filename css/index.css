@@ -90,6 +90,7 @@ body {
   position: absolute;
   bottom: 12rem;
   background: transparent;
+  border-radius: 1rem 1rem 0px 0px !important;
 }
 
 .btn-ersa {
