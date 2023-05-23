@@ -67,7 +67,7 @@
     var y = document.getElementById("footer_");
     var z = document.getElementById("card_buscador");
     x.style.display = "none";
-    y.style.display= "none";
+    // y.style.display= "none";
     z.style.display= "block";
 
   }
