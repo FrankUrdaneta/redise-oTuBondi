@@ -36,5 +36,47 @@
       this.classList.add('active');
     });
   });
+
+
+
+  var movableDiv = document.querySelector('.movable-div');
+  var startY;
+
+  movableDiv.addEventListener('dragstart', function (e) {
+      startY = e.clientY;
+  });
+
+  movableDiv.addEventListener('drag', function (e) {
+      var deltaY = e.clientY - startY;
+      var newPosition = movableDiv.offsetTop + deltaY;
+
+      if (newPosition > 0 && newPosition < window.innerHeight - movableDiv.offsetHeight) {
+          movableDiv.style.top = newPosition + 'px';
+      }
+
+      startY = e.clientY;
+  });
+
+  movableDiv.addEventListener('dragend', function () {
+      startY = null;
+  });
   
-  
+
+  function donde_quieres_ir(){
+    var x = document.getElementById("buscador_ini");
+    var y = document.getElementById("footer_");
+    var z = document.getElementById("card_buscador");
+    x.style.display = "none";
+    y.style.display= "none";
+    z.style.display= "block";
+
+  }
+
+  function volver_ini(){
+    var x = document.getElementById("buscador_ini");
+    var y = document.getElementById("footer_");
+    var z = document.getElementById("card_buscador");
+    x.style.display = "block";
+    y.style.display= "block";
+    z.style.display= "none";
+  }

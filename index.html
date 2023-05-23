@@ -166,7 +166,7 @@
     <!-- Div donde se mostrará el mapa -->
     <div id="map" style="width: 100%; height: 700px; margin-top: 0rem"></div>
     
-    <div class="container buscador_ini">
+    <div id="buscador_ini" class="container buscador_ini">
         <div class="row">
           <div class="col text-center">
             <div class="input-group">
@@ -175,7 +175,7 @@
                   <i class="bi bi-search"></i>
                 </button>
               </div>
-              <input style="border-radius: 0rem 1rem 1rem 0; height: 50px;" type="text" class="form-control input-lg" placeholder="¿Dónde quieres ir?">
+              <input id="donde_quieres_ir" onclick="donde_quieres_ir()" style="border-radius: 0rem 1rem 1rem 0; height: 50px;" type="text" class="form-control input-lg" placeholder="¿Dónde quieres ir?">
             </div>
           </div>
         </div>
@@ -187,14 +187,32 @@
           </div>
         </div>
       </div>
+      <!-- <div class="movable-div" draggable="true"></div> -->
+      <!-- buscador  -->
+      <div id="card_buscador" class="card card_buscador" style="display: none;">
+        <div class="card-body">
+            <span style="background: transparent; border: none" class="input-group-text"><i class="bi bi-arrow-left" style="color: #009ee2; font-size: 1.5rem;" onclick="volver_ini()"></i></span>
+          <div class="input-group mb-3">
+            <span style="background: transparent;border:none" class="input-group-text"><i class="bi bi-dot" style="color: #009ee2;font-size: 1.5rem"></i></span>
+            <input style="border-radius: 0rem 1rem 1rem 0; height: 50px;" type="text" class="form-control" placeholder="Origen">
+          </div>
+          <div class="input-group mb-3">
+            <span style="background: transparent;border:none" class="input-group-text"><i class="bi bi-geo-alt" style="color: #009ee2;font-size: 1.5rem"></i></span>
+            <input style="border-radius: 0rem 1rem 1rem 0; height: 50px;" type="text" class="form-control" placeholder="Destino">
+          </div>
+          <button class="btn btn-primary rounded-pill" style="height: 50px;width: 100%;  "><i class="bi bi-search" style="color: #009ee2;font-size: 1.5rem;"></i>BUSCAR</button>
+        </div>
+      </div>
       
       
-    <footer class="footer footer_tubondi" style="background-color: #009ee2;">
+
+
+    <footer id="footer_" class="footer footer_tubondi" style="background-color: #009ee2;">
         <div class="container">
           <div class="row">
             <div class="col text-center contenedor_footer">
-              <i title="Buscar tu bondi" class="bi bi-search icon_footer"></i>
-              <span class="icon_text">Buscar tu bondi</span>
+              <i title="Buscar tu bondi" class="bi bi-house icon_footer"></i>
+              <span class="icon_text">Inicio</span>
             </div>
             <div class="col text-center contenedor_footer">
               <i title="Paradas cercanas" class="bi bi-geo-alt icon_footer"></i>

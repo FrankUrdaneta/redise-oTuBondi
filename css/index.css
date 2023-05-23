@@ -53,21 +53,22 @@ body {
   font-size: 1.5rem;
   color: #fafafa;
   margin: 1rem;
-  margin-bottom: 0rem;
+  margin-top: 1rem;
   transition: all 0.3s;
 }
 
 .icon_footer.active {
-  z-index: 1;
-  border-radius: 3rem 3rem 0px 0px;
+  z-index: 10;
+  /* border-radius: 3rem 3rem 0px 0px; */
   background-color: #009ee2;
   position: relative;
   top: -1rem;
 }
-/* .contenedor_footer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-} */
+.contenedor_footer {
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr; */
+  margin-top: 1rem;
+}
 .ol-zoom {
   left: auto !important;
   right: 0.5rem !important;
@@ -110,4 +111,25 @@ body {
   border-color: #cce6ff !important;
   color: #000000 !important;
   border-radius: 2rem;
+}
+
+.movable-div {
+  position: absolute;
+  top: 84%;
+  left: 0;
+  border-radius: 1rem 1rem 0px 0px;
+  width: 100%;
+  height: 80%;
+  background-color: #009ee2;
+  cursor: grab;
+}
+
+.card_buscador {
+  background: #f1f1f1;
+  position: absolute;
+  bottom: 3rem;
+  width: 100%;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  /* display: none; */
 }
