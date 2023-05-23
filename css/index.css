@@ -62,12 +62,12 @@ body {
   border-radius: 3rem 3rem 0px 0px;
   background-color: #009ee2;
   position: relative;
-  top: -1.5rem;
+  top: -1rem;
 }
-.contenedor_footer {
+/* .contenedor_footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-}
+} */
 .ol-zoom {
   left: auto !important;
   right: 0.5rem !important;
@@ -80,4 +80,34 @@ body {
   left: 0.5rem;
   height: 700px;
   overflow: auto;
+}
+.icon_text {
+  color: #fafafa;
+  display: none;
+}
+.buscador_ini {
+  position: absolute;
+  bottom: 12rem;
+  background: transparent;
+}
+
+.btn-ersa {
+  background-color: #db9393 !important;
+  border-color: #ffcccc !important;
+  color: #000000 !important;
+  border-radius: 2rem;
+}
+
+.btn-tamse {
+  background-color: #7193d8 !important;
+  border-color: #ccddff !important;
+  color: #000000 !important;
+  border-radius: 2rem;
+}
+
+.btn-coniferal {
+  background-color: #dee040 !important;
+  border-color: #cce6ff !important;
+  color: #000000 !important;
+  border-radius: 2rem;
 }

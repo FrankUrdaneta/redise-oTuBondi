@@ -13,18 +13,27 @@
     })
   });
 
-
-  document.addEventListener('DOMContentLoaded', function() {
-    var icons = document.querySelectorAll('.icon_footer');
-    
-    icons.forEach(function(icon) {
-      icon.addEventListener('click', function() {
-        icons.forEach(function(otherIcon) {
-          otherIcon.classList.remove('active');
-        });
-        
-        this.classList.add('active');
+  const icons = document.querySelectorAll('.icon_footer');
+  
+  icons.forEach(function(icon) {
+    icon.addEventListener('click', function() {
+      // Ocultar todos los textos
+      const textos = document.querySelectorAll('.contenedor_footer .icon_text');
+      textos.forEach(function(texto) {
+        texto.style.display = 'none';
       });
+      
+      // Mostrar solo el texto correspondiente al icono clickeado
+      const texto = this.nextElementSibling;
+      texto.style.display = 'block';
+      
+      // Remover la clase 'active' de todos los iconos
+      icons.forEach(function(otherIcon) {
+        otherIcon.classList.remove('active');
+      });
+      
+      // Agregar la clase 'active' al icono clickeado
+      this.classList.add('active');
     });
   });
   

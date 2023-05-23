@@ -82,7 +82,7 @@
           </div>
         </div>
       </nav>
-      <div class=" contenedor_lineas">
+      <!-- <div class=" contenedor_lineas">
         <div class="row mb-3">
           <div class="col text-center">
             <button class="btn btn-primary rounded-circle">A</button>
@@ -158,7 +158,7 @@
               <button class="btn btn-danger rounded-circle">L</button>
             </div>
           </div>
-      </div>
+      </div> -->
       
       
       
@@ -166,19 +166,53 @@
     <!-- Div donde se mostrará el mapa -->
     <div id="map" style="width: 100%; height: 700px; margin-top: 0rem"></div>
     
-
+    <div class="container buscador_ini">
+        <div class="row">
+          <div class="col text-center">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <button class="btn btn-primary" type="button">
+                  <i class="bi bi-search"></i>
+                </button>
+              </div>
+              <input type="text" class="form-control input-lg rounded-pill" placeholder="¿Dónde quieres ir?">
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col text-center">
+            <button class="btn btn-secondary btn-ersa rounded-pill">ERSA<i class="bi bi-plus"></i></button>
+            <button class="btn btn-secondary btn-tamse rounded-pill">TAMSE<i class="bi bi-plus"></i></button>
+            <button class="btn btn-secondary btn-coniferal rounded-pill">CONIFERAL<i class="bi bi-plus"></i></button>
+          </div>
+        </div>
+      </div>
+      
+      
     <footer class="footer footer_tubondi" style="background-color: #009ee2;">
         <div class="container">
           <div class="row">
             <div class="col text-center contenedor_footer">
               <i title="Buscar tu bondi" class="bi bi-search icon_footer"></i>
+              <span class="icon_text">Buscar tu bondi</span>
+            </div>
+            <div class="col text-center contenedor_footer">
               <i title="Paradas cercanas" class="bi bi-geo-alt icon_footer"></i>
+              <span class="icon_text">Paradas cercanas</span>
+            </div>
+            <div class="col text-center contenedor_footer">
               <i title="Notificaciones" class="bi bi-bell icon_footer"></i>
+              <span class="icon_text">Notificaciones</span>
+            </div>
+            <div class="col text-center contenedor_footer">
               <i title="Recargar tarjeta" class="bi bi-credit-card icon_footer"></i>
+              <span class="icon_text">Recargar tarjeta</span>
             </div>
           </div>
         </div>
-      </footer>
+    </footer>
+      
+      
       
 </body>
 <script
